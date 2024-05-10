@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace WebApp;
 
 public static class Utils
@@ -20,8 +22,25 @@ public static class Utils
         }
     }
 
+
+    public static string RemoveBadWords()
+    {
+        // läsa in JSON fil
+        var read = File.ReadAllText(Path.Combine("json", "badwords.json"));
+        Arr badWords = JSON.Parse(read);
+        foreach (var word in badWords)
+        {
+            Console.WriteLine(word);
+        }
+
+
+        return string.Empty;
+    }
+
     
 
+    
+/*
     public static Arr CreateMockUsers()
     {
         var read = File.ReadAllText(Path.Combine("json", "mock-users.json"));
@@ -46,4 +65,5 @@ public static class Utils
         }
         return successFullyWrittenUsers;
     }
+    */
 }

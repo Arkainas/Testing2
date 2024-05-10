@@ -3,17 +3,14 @@ Globals = Obj(new
 {
     debugOn = true,
     detailedAclDebug = false,
-    aclOn = false,
+    aclOn = true,
     isSpa = true,
     port = 3001,
-    serverName = "Ironboy's Minimal API Server",
-    frontendPath = Path.Combine("..", "Frontend"),
+    serverName = "Kevin's test API",
+    frontendPath = FilePath("..", "Frontend"),
     sessionLifeTimeHours = 2
 });
 
-// Server.Start();
-string enteredPassword = Console.ReadLine();
-WebApp.Utils.IsPasswordGoodEnough(enteredPassword);
-Console.WriteLine("Press any button to exit");
-Console.ReadKey();
 
+
+Server.Start();

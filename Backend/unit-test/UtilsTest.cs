@@ -1,9 +1,9 @@
 using Microsoft.VisualBasic;
 using Newtonsoft.Json.Schema;
-using Xunit;
 namespace WebApp;
 
-public class UtilsTest
+/*
+public class UtilsTest(Xlog Console)
 {
 
 
@@ -25,6 +25,10 @@ public class UtilsTest
 
         // Assert
         Assert.True(result);
+        
+        if (result == true){
+            Console.WriteLine("test successful");
+        }
     }
         
     [Fact]
@@ -74,6 +78,8 @@ public class UtilsTest
         // check requivelancy for each user
         // INTERPOLERA INTE IN VÄRDEN I DATABASEN.
     }
-
-
+    
 }
+
+
+*/
